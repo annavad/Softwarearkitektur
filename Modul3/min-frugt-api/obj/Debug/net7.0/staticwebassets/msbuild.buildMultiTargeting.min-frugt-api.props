@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\min-frugt-api.props" />
+</Project>

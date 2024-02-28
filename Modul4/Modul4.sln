@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toDoList-api", "toDoList-api\toDoList-api.csproj", "{AF7A1112-640E-424D-959C-92BADDEB9C97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "softark-spring-2024-main", "softark-spring-2024-main", "{5D0F2502-0C0C-4BDC-A203-CD1CD7EE6DD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modul04", "modul04", "{E3F46FDB-1940-4FDC-B3FB-FA530DF91305}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListBlazor", "softark-spring-2024-main\modul04\TodoListBlazor\TodoListBlazor.csproj", "{FD2458B9-0051-442E-967D-6FE1B6296C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ef-modul6", "..\Modul6\ef-modul6\ef-modul6.csproj", "{C6F18C0B-32E2-472A-9B12-EFC0232199CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Miniprojekt", "Miniprojekt", "{374A86B8-4DBB-41F3-A3CC-7FC9EC1D9211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "miniprojekt-api", "..\Miniprojekt\miniprojekt-api\miniprojekt-api.csproj", "{EA53DED8-7ACD-4208-A6DC-3069E7DBE8C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF7A1112-640E-424D-959C-92BADDEB9C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7A1112-640E-424D-959C-92BADDEB9C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7A1112-640E-424D-959C-92BADDEB9C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7A1112-640E-424D-959C-92BADDEB9C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2458B9-0051-442E-967D-6FE1B6296C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2458B9-0051-442E-967D-6FE1B6296C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2458B9-0051-442E-967D-6FE1B6296C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2458B9-0051-442E-967D-6FE1B6296C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F18C0B-32E2-472A-9B12-EFC0232199CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F18C0B-32E2-472A-9B12-EFC0232199CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F18C0B-32E2-472A-9B12-EFC0232199CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F18C0B-32E2-472A-9B12-EFC0232199CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA53DED8-7ACD-4208-A6DC-3069E7DBE8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA53DED8-7ACD-4208-A6DC-3069E7DBE8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA53DED8-7ACD-4208-A6DC-3069E7DBE8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA53DED8-7ACD-4208-A6DC-3069E7DBE8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3F46FDB-1940-4FDC-B3FB-FA530DF91305} = {5D0F2502-0C0C-4BDC-A203-CD1CD7EE6DD7}
+		{FD2458B9-0051-442E-967D-6FE1B6296C97} = {E3F46FDB-1940-4FDC-B3FB-FA530DF91305}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2CABD9A-4893-4657-BA54-F3A171C31E31}
+	EndGlobalSection
+EndGlobal

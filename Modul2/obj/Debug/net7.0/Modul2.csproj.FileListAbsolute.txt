@@ -1,0 +1,14 @@
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.AssemblyInfoInputs.cache
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.AssemblyInfo.cs
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.csproj.CoreCompileInputs.cache
+C:\Users\45514\Softwarearkitektur\Modul2\bin\Debug\net7.0\Modul2.exe
+C:\Users\45514\Softwarearkitektur\Modul2\bin\Debug\net7.0\Modul2.deps.json
+C:\Users\45514\Softwarearkitektur\Modul2\bin\Debug\net7.0\Modul2.runtimeconfig.json
+C:\Users\45514\Softwarearkitektur\Modul2\bin\Debug\net7.0\Modul2.dll
+C:\Users\45514\Softwarearkitektur\Modul2\bin\Debug\net7.0\Modul2.pdb
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.dll
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\refint\Modul2.dll
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.pdb
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\Modul2.genruntimeconfig.cache
+C:\Users\45514\Softwarearkitektur\Modul2\obj\Debug\net7.0\ref\Modul2.dll
