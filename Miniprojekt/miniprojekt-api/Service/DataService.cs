@@ -8,9 +8,9 @@ namespace Service;
 
 public class DataService
 {
-    private BookContext db { get; }
+    private PostsContext db { get; }
 
-    public DataService(BookContext db) {
+    public DataService(PostsContext db) {
         this.db = db;
     }
     /// <summary>
@@ -18,30 +18,30 @@ public class DataService
     /// </summary>
     public void SeedData() {
         
-        Author author = db.Authors.FirstOrDefault()!;
-        if (author == null) {
-            author = new Author { Fullname = "Kristian" };
-            db.Authors.Add(author);
-            db.Authors.Add(new Author { Fullname = "Søren" });
-            db.Authors.Add(new Author { Fullname = "Mette" });
+        Users user = db.User.FirstOrDefault()!;
+        if (user == null) {
+            user = new Users { Name = "Kristian" };
+            db.User.Add(user);
+            db.User.Add(new Users { Name = "Søren" });
+            db.User.Add(new Users { Name = "Mette" });
         }
 
-        Book book = db.Books.FirstOrDefault()!;
-        if (book == null)
+        Posts post = db.Post.FirstOrDefault()!;
+        if (post == null)
         {
-            db.Books.Add(new Book { Title = "Harry Potter", Author = author });
-            db.Books.Add(new Book { Title = "Ringenes Herre", Author = author });
-            db.Books.Add(new Book { Title = "Entity Framework for Dummies", Author = author });
+            db.Post.Add(new Posts { Post = "Her er et post", User = user });
+            db.Post.Add(new Posts { Post = "Test-post til folket", User = user });
+            db.Post.Add(new Posts { Post = "Vi poster lige en tester", User = user });
         }
 
         db.SaveChanges();
     }
 
-    public List<Book> GetBooks() {
-        return db.Books.Include(b => b.Author).ToList();
+    public List<Posts> GetPosts() {
+        return db.Post.Include(p => p.User).ToList();
     }
 
-    public Book GetBook(int id) {
+    /*public Book GetBook(int id) {
         return db.Books.Include(b => b.Author).FirstOrDefault(b => b.BookId == id);
     }
 
@@ -58,6 +58,6 @@ public class DataService
         db.Books.Add(new Book { Title = title, Author = author });
         db.SaveChanges();
         return "Book created";
-    }
+    }*/
 
 }

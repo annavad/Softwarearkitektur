@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-
-namespace Model
+using Model;
+namespace Data
 {
  public class PostsContext : DbContext
     {
-        public DbSet<Post> Posts => Set<Post>();
-        public DbSet<User> Users => Set<User>();
+        public DbSet<Posts> Post => Set<Posts>();
+        public DbSet<Users> User => Set<Users>();
 
 
-        public BookContext (DbContextOptions<PostsContext> options)
+        public PostsContext (DbContextOptions<PostsContext> options)
             : base(options)
         {
             // Den her er tom. Men ": base(options)" sikre at constructor

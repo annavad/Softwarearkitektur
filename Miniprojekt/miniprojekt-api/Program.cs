@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.Json;
 using Service;
 using Model;
+using Data;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -36,8 +37,6 @@ builder.Services.Configure<JsonOptions>(options =>
 });
 */
 
-var app = builder.Build();
-
 // Seed data hvis nødvendigt.
 using (var scope = app.Services.CreateScope())
 {
@@ -66,14 +65,14 @@ app.MapGet("/api/posts", (DataService service) =>
 {
     return service.GetPosts().Select(p => new { 
         postId = p.PostId, 
-        title = b.Title, 
+        Post = p.Post, 
         user = new {
             p.User.UserId, p.User.Name
         } 
     });
 });
 
-app.MapGet("/api/authors", (DataService service) =>
+/*app.MapGet("/api/authors", (DataService service) =>
 {
     return service.GetAuthors().Select(a => new { a.AuthorId, a.Fullname });
 });
@@ -94,12 +93,12 @@ app.MapPost("/api/posts/{id}/comments", (DataService service, NewCommentData dat
     string result = service.CreateComment(data.Comment, data.UserId);
     return new { message = result};
 });
-
+*/
 
 
 app.Run();
 
-record NewBookData(string Titel, int AuthorId);
+record NewPostData(string Post, int UserId);
 
 //Alle nødvendige routes til projektet
 //app.MapGet("/posts/",);
