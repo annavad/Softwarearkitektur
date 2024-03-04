@@ -8,9 +8,9 @@ namespace Service;
 
 public class DataService
 {
-    private PostsContext db { get; }
+    private PostContext db { get; }
 
-    public DataService(PostsContext db) {
+    public DataService(PostContext db) {
         this.db = db;
     }
     /// <summary>
@@ -18,26 +18,26 @@ public class DataService
     /// </summary>
     public void SeedData() {
         
-        Users user = db.User.FirstOrDefault()!;
+        User user = db.User.FirstOrDefault()!;
         if (user == null) {
-            user = new Users { Name = "Kristian" };
+            user = new User { Name = "Kristian" };
             db.User.Add(user);
-            db.User.Add(new Users { Name = "Søren" });
-            db.User.Add(new Users { Name = "Mette" });
+            db.User.Add(new User { Name = "Søren" });
+            db.User.Add(new User { Name = "Mette" });
         }
 
-        Posts post = db.Post.FirstOrDefault()!;
+        Post post = db.Post.FirstOrDefault()!;
         if (post == null)
         {
-            db.Post.Add(new Posts { Post = "Her er et post", User = user });
-            db.Post.Add(new Posts { Post = "Test-post til folket", User = user });
-            db.Post.Add(new Posts { Post = "Vi poster lige en tester", User = user });
+            db.Post.Add(new Post { Text = "Her er et post", User = user });
+            db.Post.Add(new Post { Text = "Test-post til folket", User = user });
+            db.Post.Add(new Post { Text = "Vi poster lige en tester", User = user });
         }
 
         db.SaveChanges();
     }
 
-    public List<Posts> GetPosts() {
+    public List<Post> GetPosts() {
         return db.Post.Include(p => p.User).ToList();
     }
 

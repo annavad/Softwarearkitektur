@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Model;
 namespace Data
 {
- public class PostsContext : DbContext
+ public class PostContext : DbContext
     {
-        public DbSet<Posts> Post => Set<Posts>();
-        public DbSet<Users> User => Set<Users>();
+        public DbSet<Post> Post => Set<Post>();
+        public DbSet<User> User => Set<User>();
 
 
-        public PostsContext (DbContextOptions<PostsContext> options)
+        public PostContext (DbContextOptions<PostContext> options)
             : base(options)
         {
             // Den her er tom. Men ": base(options)" sikre at constructor

@@ -5,7 +5,6 @@ using Model;
 using Data;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
 // Sætter CORS så API'en kan bruges fra andre domæner
 var AllowSomeStuff = "_AllowSomeStuff";
@@ -18,8 +17,10 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+
 // Tilføj DbContext factory som service.
-builder.Services.AddDbContext<PostsContext>(options =>
+builder.Services.AddDbContext<PostContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("ContextSQLite")));
 
 // Tilføj DataService så den kan bruges i endpoints
@@ -36,6 +37,7 @@ builder.Services.Configure<JsonOptions>(options =>
         System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
 */
+var app = builder.Build();
 
 // Seed data hvis nødvendigt.
 using (var scope = app.Services.CreateScope())
@@ -65,7 +67,7 @@ app.MapGet("/api/posts", (DataService service) =>
 {
     return service.GetPosts().Select(p => new { 
         postId = p.PostId, 
-        Post = p.Post, 
+        Post = p.Text, 
         user = new {
             p.User.UserId, p.User.Name
         } 
