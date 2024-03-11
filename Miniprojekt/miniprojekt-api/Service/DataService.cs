@@ -29,9 +29,9 @@ public class DataService
         Post post = db.Post.FirstOrDefault()!;
         if (post == null)
         {
-            db.Post.Add(new Post { Text = "Her er et post", User = user });
-            db.Post.Add(new Post { Text = "Test-post til folket", User = user });
-            db.Post.Add(new Post { Text = "Vi poster lige en tester", User = user });
+            db.Post.Add(new Post { Content = "Her er et post", User = user });
+            db.Post.Add(new Post { Content = "Test-post til folket", User = user });
+            db.Post.Add(new Post { Content = "Vi poster lige en tester", User = user });
         }
 
         db.SaveChanges();

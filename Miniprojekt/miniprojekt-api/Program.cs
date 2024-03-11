@@ -67,7 +67,7 @@ app.MapGet("/api/posts", (DataService service) =>
 {
     return service.GetPosts().Select(p => new { 
         postId = p.PostId, 
-        Post = p.Text, 
+        Post = p.Content, 
         user = new {
             p.User.UserId, p.User.Name
         } 
