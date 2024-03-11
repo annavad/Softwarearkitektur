@@ -5,10 +5,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace miniprojekt_api.Migrations
 {
-    /// <inheritdoc />
-    public partial class init : Migration
+    public partial class nyinit : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -31,7 +29,10 @@ namespace miniprojekt_api.Migrations
                     PostId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Text = table.Column<string>(type: "TEXT", nullable: false),
+                    Title = table.Column<string>(type: "TEXT", nullable: false),
+                    Content = table.Column<string>(type: "TEXT", nullable: false),
+                    Upvotes = table.Column<int>(type: "INTEGER", nullable: false),
+                    Downvotes = table.Column<int>(type: "INTEGER", nullable: false),
                     PostDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -51,7 +52,9 @@ namespace miniprojekt_api.Migrations
                 {
                     CommentId = table.Column<long>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Text = table.Column<string>(type: "TEXT", nullable: false),
+                    Content = table.Column<string>(type: "TEXT", nullable: false),
+                    Upvotes = table.Column<int>(type: "INTEGER", nullable: false),
+                    Downvotes = table.Column<int>(type: "INTEGER", nullable: false),
                     UserId = table.Column<int>(type: "INTEGER", nullable: false),
                     CommentDate = table.Column<DateTime>(type: "TEXT", nullable: false),
                     PostId = table.Column<int>(type: "INTEGER", nullable: true)
@@ -88,7 +91,6 @@ namespace miniprojekt_api.Migrations
                 column: "UserId");
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

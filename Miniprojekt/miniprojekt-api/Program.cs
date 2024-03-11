@@ -60,23 +60,19 @@ app.Use(async (context, next) =>
 // DataService fås via "Dependency Injection" (DI)
 app.MapGet("/", (DataService service) =>
 {
-    return new { message = "Hello World!" };
+    return new { message = "Welcome everybody to my videooooos!" };
 });
 
 app.MapGet("/api/posts", (DataService service) =>
 {
     return service.GetPosts().Select(p => new { 
         postId = p.PostId, 
-        Post = p.Content, 
+        Post = p.Content,
+        Comment = p.Comments, 
         user = new {
             p.User.UserId, p.User.Name
         } 
     });
-});
-
-/*app.MapGet("/api/authors", (DataService service) =>
-{
-    return service.GetAuthors().Select(a => new { a.AuthorId, a.Fullname });
 });
 
 app.MapGet("/api/posts/{id}", (DataService service, int id) => 
@@ -86,21 +82,29 @@ app.MapGet("/api/posts/{id}", (DataService service, int id) =>
 
 app.MapPost("/api/posts", (DataService service, NewPostData data) =>
 {
-    string result = service.CreatePost(data.Post, data.UserId);
-    return new { message = result };
+    User user = service.GetUser(data.UserId);
+    Post post = new Post(user, data.Title, data.Content);
+    return service.CreatePost(post);
 });
 
-app.MapPost("/api/posts/{id}/comments", (DataService service, NewCommentData data) => 
+app.MapPost("/api/posts/{id}/comments", (DataService service, NewCommentData data, int id) => 
 {
-    string result = service.CreateComment(data.Comment, data.UserId);
-    return new { message = result};
+    User user = service.GetUser(data.UserId);
+    Comment comment = new Comment(user, data.Content);
+    return service.CreateComment(comment, id);
+});
+/*app.MapGet("/api/authors", (DataService service) =>
+{
+    return service.GetAuthors().Select(a => new { a.AuthorId, a.Fullname });
 });
 */
 
 
 app.Run();
 
-record NewPostData(string Post, int UserId);
+record NewPostData(string Title, string Content, int UserId);
+record NewCommentData(string Content, int UserId);
+
 
 //Alle nødvendige routes til projektet
 //app.MapGet("/posts/",);

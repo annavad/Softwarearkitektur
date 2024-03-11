@@ -11,14 +11,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace miniprojekt_api.Migrations
 {
     [DbContext(typeof(PostContext))]
-    [Migration("20240304081925_init")]
-    partial class init
+    [Migration("20240311075849_ny-init")]
+    partial class nyinit
     {
-        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.4");
+            modelBuilder.HasAnnotation("ProductVersion", "6.0.4");
 
             modelBuilder.Entity("Model.Comment", b =>
                 {
@@ -29,12 +28,18 @@ namespace miniprojekt_api.Migrations
                     b.Property<DateTime>("CommentDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Downvotes")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int?>("PostId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Upvotes")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
@@ -54,12 +59,22 @@ namespace miniprojekt_api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Downvotes")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("PostDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Text")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Upvotes")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");

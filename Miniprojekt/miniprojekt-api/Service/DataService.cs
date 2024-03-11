@@ -41,23 +41,40 @@ public class DataService
         return db.Post.Include(p => p.User).ToList();
     }
 
+    public Post GetPost(int id) {
+        return db.Post.Include(p => p.User).FirstOrDefault(p => p.PostId == id)!;
+    }
+    
+    public Post CreatePost(Post post)
+    {
+        db.Post!.Add(post);
+        db.SaveChanges();
+        return post;
+    }
+
+     public Comment CreateComment(Comment comment, int postId)
+    {
+        var post = db.Post.Find(postId);
+        post.Comments.Add(comment);
+        db.SaveChanges();
+        return comment;
+    }
+    public User GetUser(int id) {
+        return db.User.FirstOrDefault(u => u.UserId == id)!;
+    }
+
     /*public Book GetBook(int id) {
         return db.Books.Include(b => b.Author).FirstOrDefault(b => b.BookId == id);
     }
 
+    public string CreatePost(User user, string title = "", string content = "", int upvotes = 0, int downvotes = 0) {
+        User User = db.User.FirstOrDefault(u => u.User == );
+        db.Post.Add(new Post { Title = title, User = user });
+        db.SaveChanges();
+        return "Post created";
+    }
     public List<Author> GetAuthors() {
         return db.Authors.ToList();
     }
-
-    public Author GetAuthor(int id) {
-        return db.Authors.Include(a => a.Books).FirstOrDefault(a => a.AuthorId == id);
-    }
-
-    public string CreateBook(string title, int authorId) {
-        Author author = db.Authors.FirstOrDefault(a => a.AuthorId == authorId);
-        db.Books.Add(new Book { Title = title, Author = author });
-        db.SaveChanges();
-        return "Book created";
-    }*/
-
+    */
 }
