@@ -63,18 +63,19 @@ public class DataService
         return db.User.FirstOrDefault(u => u.UserId == id)!;
     }
 
-    /*public Book GetBook(int id) {
-        return db.Books.Include(b => b.Author).FirstOrDefault(b => b.BookId == id);
+    public Post PostUpvote(int id)
+    {
+        var post = db.Post!.FirstOrDefault(p => p.PostId == id);
+        post!.Upvotes ++;
+        db.SaveChanges();
+        return post;
     }
 
-    public string CreatePost(User user, string title = "", string content = "", int upvotes = 0, int downvotes = 0) {
-        User User = db.User.FirstOrDefault(u => u.User == );
-        db.Post.Add(new Post { Title = title, User = user });
+    public Post PostDownvote(int id)
+    {
+        var post = db.Post!.FirstOrDefault(p => p.PostId == id);
+        post!.Downvotes ++;
         db.SaveChanges();
-        return "Post created";
+        return post;
     }
-    public List<Author> GetAuthors() {
-        return db.Authors.ToList();
-    }
-    */
 }

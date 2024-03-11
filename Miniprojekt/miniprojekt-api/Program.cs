@@ -93,14 +93,21 @@ app.MapPost("/api/posts/{id}/comments", (DataService service, NewCommentData dat
     Comment comment = new Comment(user, data.Content);
     return service.CreateComment(comment, id);
 });
-/*app.MapGet("/api/authors", (DataService service) =>
-{
-    return service.GetAuthors().Select(a => new { a.AuthorId, a.Fullname });
-});
-*/
 
+app.MapPut("/api/posts/{id}/upvote/", (DataService service, int id) =>
+{
+    var upvotedPost = service.PostUpvote(id);
+    return Results.Ok(upvotedPost);
+});
+
+app.MapPut("/api/posts/{id}/downvote/", (DataService service, int id) =>
+{
+    var downvotedPost = service.PostDownvote(id);
+    return Results.Ok(downvotedPost);
+});
 
 app.Run();
+
 
 record NewPostData(string Title, string Content, int UserId);
 record NewCommentData(string Content, int UserId);
