@@ -798,8 +798,6 @@ C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoLi
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\uQeF39LY.gz
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\mW+KWb5g.gz
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\i1nxdpO1.gz
-C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\KYWffVw+.gz
-C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\3gWCMBDS.gz
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\57t40Cxk.gz
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\blazor.boot.json
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets.build.json
@@ -812,3 +810,10 @@ C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoLi
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\refint\TodoListBlazor.dll
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\TodoListBlazor.pdb
 C:\Users\45514\Softwarearkitektur\modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\ref\TodoListBlazor.dll
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\w6EA065E.gz
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\build-gz\c4RN9hQV.gz
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets\msbuild.TodoListBlazor.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets\msbuild.build.TodoListBlazor.props
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TodoListBlazor.props
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TodoListBlazor.props
+C:\Users\45514\Softwarearkitektur\Modul4\softark-spring-2024-main\modul04\TodoListBlazor\obj\Debug\net6.0\staticwebassets.pack.json

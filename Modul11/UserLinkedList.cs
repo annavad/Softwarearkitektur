@@ -23,8 +23,15 @@ namespace LinkedList
 
         public User RemoveFirst()
         {
-            // TODO: Implement!
-            return null!;
+            if(first == null)
+            {
+                return null!;
+            }
+
+            User res = first.Data;
+            first = first.Next;
+
+            return res;
         }
 
         public void RemoveUser(User user)
@@ -62,8 +69,19 @@ namespace LinkedList
 
         public User GetLast()
         {
-            // TODO: Implement
-            return null!;
+            if(first == null)
+            {
+                return null!;
+            }
+
+            Node current = first;
+
+            while (current.Next !=null)
+            {
+                current = current.Next;
+            }
+
+            return current.Data;
         }
 
         public int CountUsers()

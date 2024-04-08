@@ -199,13 +199,13 @@
       "mscorlib.dll": "sha256-s5oSn2ty4Q1q2t\/0DWCHXo4ll77GsoYrYe5ExHyAg0o=",
       "netstandard.dll": "sha256-AH9oqzxpl6lGTr9vEnTGTk40WK7IpSuGlKS3dTEC67I=",
       "System.Private.CoreLib.dll": "sha256-ae6NSkrFVtQY8QH8C38+ZYQDBUinD+PjmAf\/eE\/eVMQ=",
-      "TodoListBlazor.dll": "sha256-qoZPyseX5a2F+SR65rPCVwNtj8rrUxncqy54QDjY0Z8="
+      "TodoListBlazor.dll": "sha256-QnMEnY5mD0rnMumAEbvWxC\/0U54Qv91WEzEWMm\/O3G8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "TodoListBlazor.pdb": "sha256-twfD\/x7N+PPN9vkzS+ik9VyVF9G\/xMaQ7NJK3qCqfE0="
+      "TodoListBlazor.pdb": "sha256-23QNgFvKanluKF1\/A6pOEeF86u2XLSvpZLg3htpUcqk="
     },
     "runtime": {
       "dotnet.6.0.26.u6o1nzwg1t.js": "sha256-q4SPzhRyXlR1HXK6WAbwJRNI6jvBBYUisoHeH0+eRyM=",
@@ -215,6 +215,12 @@
       "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
       "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
       "icudt_no_CJK.dat": "sha256-OxylFgLJlFqixsj+nLxYVsv5iZLvfIKMpLf9hrWaChA="
+    },
+    "runtimeAssets": {
+      "dotnet.wasm": {
+        "behavior": "dotnetwasm",
+        "hash": "sha256-gOrDtYcTvKbDsKu+YgxfX6XPkBXUCQ3aPq6vtv1SZz4="
+      }
     },
     "satelliteResources": null
   }
