@@ -29,28 +29,28 @@ namespace LinkedList
 
         public void RemoveUser(User user)
         {
-            Node node = first;
+            Node current = first;
             Node previous = null!;
             bool found = false;
 
-            while (!found && node != null)
+            while (!found && current != null)
             {
-                if (node.Data.Name == user.Name)
+                if (current.Data.Name == user.Name)
                 {
                     found = true;
-                    if (node == first)
+                    if (current == first)
                     {
                         RemoveFirst();
                     }
                     else
                     {
-                        previous.Next = node.Next;
+                        previous.Next = current.Next;
                     }
                 }
                 else
                 {
-                    previous = node;
-                    node = node.Next;
+                    previous = current;
+                    current = current.Next;
                 }
             }
         }
@@ -74,12 +74,12 @@ namespace LinkedList
 
         public override String ToString()
         {
-            Node node = first;
+            Node current = first;
             String result = "";
-            while (node != null)
+            while (current != null)
             {
-                result += node.Data.Name + ", ";
-                node = node.Next;
+                result += current.Data.Name + ", ";
+                current = current.Next;
             }
             return result.Trim();
         }
