@@ -84,9 +84,12 @@ namespace LinkedList
             return current.Data;
         }
 
-        public int CountUsers()
+        public int CountUsers() //ikke færdig
         {
-            // TODO: Implement
+            Node current = first;
+            int counter = 0;
+
+            while (current != null)
             return -1;
         }
 
