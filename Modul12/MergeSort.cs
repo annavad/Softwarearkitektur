@@ -18,11 +18,22 @@ public static class MergeSort
             Merge(array, l, m, h);
         }
     }
-
+//Ikke færdig herunder
     private static void Merge(int[] array, int low, int middle, int high)
     {
-        // TODO!
-        return;
+        List<int> list = new List<int>();
+        int i1 = low;
+        int i2 = middle + 1;
+
+        if (high == low) return;
+
+        while (i1 <= middle && i2 <= high)
+        {
+            if (array[i1] < [i2])
+            {
+
+            }
+        }
     }
 
 }
