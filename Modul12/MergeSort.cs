@@ -20,7 +20,6 @@ public static class MergeSort
             Merge(array, l, m, h);
         }
     }
-//Ikke færdig herunder
     private static void Merge(int[] array, int low, int middle, int high)
     {
         List<int> result = new List<int>();
