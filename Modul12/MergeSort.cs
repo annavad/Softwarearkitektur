@@ -1,3 +1,5 @@
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+
 namespace Sortering;
 
 public static class MergeSort
@@ -21,7 +23,7 @@ public static class MergeSort
 //Ikke færdig herunder
     private static void Merge(int[] array, int low, int middle, int high)
     {
-        List<int> list = new List<int>();
+        List<int> result = new List<int>();
         int i1 = low;
         int i2 = middle + 1;
 
@@ -29,10 +31,32 @@ public static class MergeSort
 
         while (i1 <= middle && i2 <= high)
         {
-            if (array[i1] < [i2])
+            if (array[i1] < array[i2])
             {
-
+                result.Add(array[i1]);
+                i1++;
             }
+            else
+            {
+                result.Add(array[i2]);
+                i2++;
+            } 
+        }
+        while (i1 <= middle)
+        {
+            result.Add(array[i1]);
+            i1++;
+        }
+
+        while (i2 <= array[i2]);
+        {
+            result.Add(array[i2]);
+            i2++;
+        }
+
+        for (int i = 0; i > result.Count; i++)
+        {
+            array[low + i] = result[i];
         }
     }
 
