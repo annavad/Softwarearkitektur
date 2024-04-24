@@ -223,6 +223,7 @@ public class DataService
     
     if (dato.dato < ordination.startDen || dato.dato > ordination.slutDen)
     {
+        db.SaveChanges();
         return "Invalid date for applying the ordination";
     }
 
