@@ -17,20 +17,30 @@ public class PN : Ordination {
     /// Returner false ellers og datoen givesDen ignoreres
     /// </summary>
     public bool givDosis(Dato givesDen) {
+
         if (givesDen.dato >= startDen && givesDen.dato <= slutDen)
         {
+            // Add the given date to the list of dates when doses were given
             dates.Add(givesDen);
             return true;
         }
         else
         {
-            return false;   
+            // The provided date is not within the validity period, so ignore it
+            return false;
         }
     }
 
     public override double doegnDosis() {
-    	// TODO: Implement!
-        return -1;
+        int totalDays = (slutDen - startDen).Days + 1;
+
+        // Calculate the total number of doses given
+        int totalDosesGiven = dates.Count;
+
+        // Calculate the average daily dose
+        double averageDailyDose = totalDosesGiven / (double)totalDays;
+
+        return averageDailyDose;
     }
 
 
