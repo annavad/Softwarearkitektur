@@ -22,9 +22,19 @@ public class DagligSkæv : Ordination {
 	}
 
 	public override double doegnDosis() {
-		// TODO: Implement!
-        return -1;
-	}
+
+        double totalDose = 0;
+        foreach (Dosis dosis in doser)
+        {
+            totalDose += dosis.antal;
+        }
+
+       
+        int antalDoser = doser.Count;
+        double doegnDosis = totalDose / antalDoser;
+
+        return doegnDosis;
+    }
 
 	public override String getType() {
 		return "DagligSkæv";

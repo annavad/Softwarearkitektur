@@ -24,9 +24,22 @@ public class DagligFast : Ordination {
 	}
 
 	public override double doegnDosis() {
-		// TODO: Implement!
-        return -1;
-	}
+        
+        Dosis[] doser = getDoser();
+
+        // tæller antal doser for en dag
+        double totalDose = 0;
+        foreach (Dosis dosis in doser)
+        {
+            totalDose += dosis.antal;
+        }
+
+        
+        int antalPerioder = 4; // det er 4 pga vi har morgen middag aften og nat
+        double doegnDosis = totalDose / antalPerioder;
+
+        return doegnDosis;
+    }
 	
 	public Dosis[] getDoser() {
 		Dosis[] doser = {MorgenDosis, MiddagDosis, AftenDosis, NatDosis};
