@@ -223,13 +223,14 @@ public class DataService
     
     if (dato.dato < ordination.startDen || dato.dato > ordination.slutDen)
     {
-        db.SaveChanges();
         return "Invalid date for applying the ordination";
     }
-
+    db.SaveChanges(); // Her gemmer den stadig ikke "Givet" i databasen
     return $"Ordination applied successfully for date: {dato.dato.ToShortDateString()}";
 }
     
+
+
 
     /// <summary>
     /// Den anbefalede dosis for den pågældende patient, per døgn, hvor der skal tages hensyn til
