@@ -45,7 +45,6 @@ public class ServiceTest
     public void TestAtKodenSmiderEnException()
     {
         Assert.ThrowsException<ArgumentNullException>(() => MetodeDerForventerIkkeNull(null));
-        Console.WriteLine("Her kommer der ikke en exception. Testen fejler ikke.");
     }
 
     public void MetodeDerForventerIkkeNull(object obj)
