@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ordination_api.Migrations
 {
     [DbContext(typeof(OrdinationContext))]
-    [Migration("20240423103737_nydato")]
-    partial class nydato
+    [Migration("20240429073032_initialcreate")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -21,7 +21,7 @@ public class DataService
     public void SeedData() {
 
         // Patients
-        Patient[] patients = new Patient[5];
+        Patient[] patients = new Patient[8];
         patients[0] = db.Patienter.FirstOrDefault()!;
 
         if (patients[0] == null)
