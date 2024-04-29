@@ -41,16 +41,18 @@ public class ServiceTest
         Assert.AreEqual(2, service.GetDagligFaste().Count());
     }
 
-    [TestMethod]
-    [ExpectedException(typeof(ArgumentNullException))]
+     [TestMethod]
     public void TestAtKodenSmiderEnException()
     {
-        // Herunder skal man så kalde noget kode,
-        // der smider en exception.
+        Assert.ThrowsException<ArgumentNullException>(() => MetodeDerForventerIkkeNull(null));
+        Console.WriteLine("Her kommer der ikke en exception. Testen fejler ikke.");
+    }
 
-        // Hvis koden _ikke_ smider en exception,
-        // så fejler testen.
-
-        Console.WriteLine("Her kommer der ikke en exception. Testen fejler.");
+    public void MetodeDerForventerIkkeNull(object obj)
+    {
+        if (obj == null)
+        {
+            throw new ArgumentNullException(nameof(obj));
+        }
     }
 }
