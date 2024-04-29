@@ -35,7 +35,7 @@ public class DagligFast : Ordination {
         }
 
         
-        int antalPerioder = (slutDen.Day-startDen.Day);
+        int antalPerioder = (slutDen.Day-startDen.Day +1);
         double doegnDosis = totalDose / antalPerioder;
 
         return doegnDosis;

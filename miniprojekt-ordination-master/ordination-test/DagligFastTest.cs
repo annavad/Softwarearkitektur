@@ -19,6 +19,65 @@ public class DagligFastTest
 
         var result = dagligFast.doegnDosis();
 
-        Console.WriteLine(result);
+        
+       Assert.AreEqual(3.33, result, 0.01);
+    }
+
+    [TestMethod]
+
+    public void Paracetamol_Undervægtig()
+    {
+
+    }
+
+
+
+
+    [TestMethod]
+
+    public void Paracetamol_Mellemvægtig()
+    {
+
+    }
+
+
+
+
+    [TestMethod]
+
+    public void Paracetamol_Overvægtig()
+    {
+
+    }
+
+
+
+
+
+    [TestMethod]
+
+    public void Methotrexat_Undervægtig()
+    {
+        
+    }
+
+
+
+
+    [TestMethod]
+
+    public void Methotrexat_Mellemvægtig()
+    {
+
+    }
+
+
+
+
+    [TestMethod]
+
+    public void Methotrexat_Overvægtig()
+    {
+
     }
 }
