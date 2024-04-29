@@ -35,7 +35,7 @@ public class DagligFast : Ordination {
         }
 
         
-        int antalPerioder = 4; // det er 4 pga vi har morgen middag aften og nat
+        int antalPerioder = (slutDen.Day-startDen.Day);
         double doegnDosis = totalDose / antalPerioder;
 
         return doegnDosis;
