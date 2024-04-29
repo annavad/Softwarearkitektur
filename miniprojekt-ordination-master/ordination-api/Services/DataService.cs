@@ -31,12 +31,18 @@ public class DataService
             patients[2] = new Patient("050972-1233", "Hans Jørgensen", 89.4);
             patients[3] = new Patient("011064-1522", "Ulla Nielsen", 59.9);
             patients[4] = new Patient("123456-1234", "Ib Hansen", 87.7);
+            patients[5] = new Patient("050962-1247", "Testvægt under", 22);
+            patients[6] = new Patient("281064-1672", "Testvægt middel", 85);
+            patients[7] = new Patient("090556-1434", "Testvægt over", 140);
 
             db.Patienter.Add(patients[0]);
             db.Patienter.Add(patients[1]);
             db.Patienter.Add(patients[2]);
             db.Patienter.Add(patients[3]);
             db.Patienter.Add(patients[4]);
+            db.Patienter.Add(patients[5]);
+            db.Patienter.Add(patients[6]);
+            db.Patienter.Add(patients[7]);
             db.SaveChanges();
         }
 
