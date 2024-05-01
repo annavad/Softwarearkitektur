@@ -11,11 +11,6 @@ public class PN : Ordination {
     public PN() : base(null!, new DateTime(), new DateTime()) {
     }
 
-    /// <summary>
-    /// Registrerer at der er givet en dosis på dagen givesDen
-    /// Returnerer true hvis givesDen er inden for ordinationens gyldighedsperiode og datoen huskes
-    /// Returner false ellers og datoen givesDen ignoreres
-    /// </summary>
     public bool givDosis(Dato givesDen) {
 
         if (givesDen.dato >= startDen && givesDen.dato <= slutDen)
