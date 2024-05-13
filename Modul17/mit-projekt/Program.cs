@@ -26,21 +26,21 @@ app.MapGet("/api/kunder", () => kunder);
 
 //Henter den specifikke kunde, hvis id du skriver i stien
 app.MapGet("/api/kunder/{id}", (int id) => kunder [id]);
-/*
+
 //Lader mig tilføje en ny kunde i body
-app.MapPost("/api/tasks", (toDoTask newTask) => {
-   tasks = tasks.Append(newTask).ToArray();  
+app.MapPost("/api/kunder", (kunde newKunde) => {
+   kunder = kunder.Append(newKunde).ToArray();  
 });
 
 //Sletter en kunde fra arrayet
-app.MapDelete("/api/tasks/{id}", (int id) => {
-    tasks = tasks.Where((task, index) => index != id).ToArray();
+app.MapDelete("/api/kunder/{id}", (int id) => {
+    kunder = kunder.Where((kunde, index) => index != id).ToArray();
         return Results.NoContent();
 });
 
 //Henter en liste af emails baseret på kundetypen
-app.MapGet("/api/emails/{type}", (string email) => kunder [email]);
-*/
+//app.MapGet("/api/emails/{type}", (string email) => kunder [email]);
+
 app.Run();
 
 record kunde(int id, string navn, string email, string type);
