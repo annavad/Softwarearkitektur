@@ -38,9 +38,16 @@ app.MapDelete("/api/kunder/{id}", (int id) => {
         return Results.NoContent();
 });
 
-//Henter en liste af emails baseret på kundetypen
-//app.MapGet("/api/emails/{type}", (string email) => kunder [email]);
+//Henter en liste af emails baseret på kundetypen (ikke færdig)
+//app.MapGet("/api/emails/{type}", (string type) => kunder {
+//       return kunder.Where;
 
 app.Run();
 
 record kunde(int id, string navn, string email, string type);
+public class kunde {
+    public int id { get; set; }
+    public string navn { get; set;}
+    public string email { get; set;}
+    public string type { get; set; }
+}
