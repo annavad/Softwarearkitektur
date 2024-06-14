@@ -1,0 +1,14 @@
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\bin\Debug\net7.0\opgave3.exe
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\bin\Debug\net7.0\opgave3.deps.json
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\bin\Debug\net7.0\opgave3.runtimeconfig.json
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\bin\Debug\net7.0\opgave3.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\bin\Debug\net7.0\opgave3.pdb
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.AssemblyInfoInputs.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.AssemblyInfo.cs
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.csproj.CoreCompileInputs.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\refint\opgave3.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.pdb
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\opgave3.genruntimeconfig.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\2modul\opgave3\obj\Debug\net7.0\ref\opgave3.dll
