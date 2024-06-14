@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul12", "Modul12", "{82C2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sortering", "..\Modul12\sortering.csproj", "{C0ECDDDB-CE21-4E67-955A-73F06A7E1440}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-projekt", "..\Eksamensforb\1Modul\console-projekt\console-projekt.csproj", "{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{C0ECDDDB-CE21-4E67-955A-73F06A7E1440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0ECDDDB-CE21-4E67-955A-73F06A7E1440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0ECDDDB-CE21-4E67-955A-73F06A7E1440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{E3F46FDB-1940-4FDC-B3FB-FA530DF91305} = {5D0F2502-0C0C-4BDC-A203-CD1CD7EE6DD7}
 		{FD2458B9-0051-442E-967D-6FE1B6296C97} = {E3F46FDB-1940-4FDC-B3FB-FA530DF91305}
 		{C0ECDDDB-CE21-4E67-955A-73F06A7E1440} = {82C2F8EC-4529-40AD-ADDD-3E959CE7E3A3}
+		{8C0927E1-4560-4C8C-9E4B-D8300BA09C2C} = {5D0F2502-0C0C-4BDC-A203-CD1CD7EE6DD7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2CABD9A-4893-4657-BA54-F3A171C31E31}

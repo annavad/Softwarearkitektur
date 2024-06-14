@@ -1,0 +1,14 @@
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\bin\Debug\net7.0\mit-console-projekt.exe
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\bin\Debug\net7.0\mit-console-projekt.deps.json
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\bin\Debug\net7.0\mit-console-projekt.runtimeconfig.json
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\bin\Debug\net7.0\mit-console-projekt.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\bin\Debug\net7.0\mit-console-projekt.pdb
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.AssemblyInfoInputs.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.AssemblyInfo.cs
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.csproj.CoreCompileInputs.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\refint\mit-console-projekt.dll
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.pdb
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\mit-console-projekt.genruntimeconfig.cache
+C:\Users\45514\Softwarearkitektur\Eksamensforb\1Modul\mit-console-projekt\obj\Debug\net7.0\ref\mit-console-projekt.dll
